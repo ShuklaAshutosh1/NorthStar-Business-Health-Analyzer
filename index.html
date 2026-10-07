@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f7f4" />
+    <meta name="description" content="A polished local-first workspace for tracking client business health, sales, expenses and cash flow in Indian Rupees." />
+    <meta name="color-scheme" content="light" />
+    <title>Northstar — AI Business Health Analyser</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" id="brandHome" href="#welcome" aria-label="Northstar welcome page"><span class="brand-mark">✳</span><span>northstar</span></a>
+        <div class="workspace-label">WORKSPACE</div>
+        <button class="workspace-switch" id="workspaceSwitcher"><span class="workspace-avatar">A</span><span class="workspace-copy"><strong>Acme Studio</strong><small>Creative studio</small></span><span class="chevron">⌄</span></button>
+        <nav class="nav-list" aria-label="Main navigation">
+          <a class="nav-item active" href="#clients" data-view="clients"><span class="nav-icon">◫</span> Client portfolio</a>
+          <a class="nav-item" href="#accounts" data-view="accounts"><span class="nav-icon">▣</span> Accounts</a>
+          <a class="nav-item" href="#overview" data-view="overview"><span class="nav-icon">▦</span> Client overview</a>
+          <a class="nav-item" href="#sales" data-view="sales"><span class="nav-icon">▤</span> Sales dashboard</a>
+          <a class="nav-item" href="#cashflow" data-view="cashflow"><span class="nav-icon">◷</span> Cash flow</a>
+          <a class="nav-item" href="#transactions" data-view="transactions"><span class="nav-icon">⇄</span> Transactions</a>
+          <a class="nav-item" href="#customers" data-view="customers"><span class="nav-icon">♙</span> Customers</a>
+          <a class="nav-item" href="#expenses" data-view="expenses"><span class="nav-icon">↘</span> Expenses</a>
+          <a class="nav-item" href="#insights" data-view="insights"><span class="nav-icon">✧</span> AI growth plan</a>
+          <a class="nav-item" href="#benchmarks" data-view="benchmarks"><span class="nav-icon">◉</span> Benchmarks</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="help-card"><span class="help-icon">✦</span><strong>Your business, clearer.</strong><p>Import a transaction CSV to update your dashboards.</p><button class="text-button" id="connectData">Import guidance <span>→</span></button></div>
+          <a class="nav-item" href="#settings" data-view="settings"><span class="nav-icon">⚙</span> Settings</a>
+          <button class="profile" id="profileButton"><span class="profile-avatar">AS</span><span class="profile-copy"><strong>Admin User</strong><small>Administrator</small></span><span class="chevron">···</span></button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <button class="mobile-menu" id="menuToggle" aria-label="Open navigation">☰</button>
+          <div class="breadcrumbs">Workspace <span>/</span> <strong>Overview</strong></div>
+          <div class="top-actions"><span class="updated"><i></i> Updated just now</span><button class="button-secondary share-top-button" id="shareSummary">↗ Share summary</button><button class="icon-button" aria-label="Notifications">♧<b></b></button><button class="avatar-small" id="profileAvatarTop" aria-label="Edit profile">AU</button></div>
+        </header>
+
+        <div id="pageView"><div class="loading-card">Loading your client portfolio…</div></div>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <dialog class="modal" id="infoModal"><div class="modal-head"><span class="modal-icon">✧</span><button class="modal-close" aria-label="Close">×</button></div><div id="modalContent"></div></dialog>
+    <script src="app.js"></script>
+  </body>
+</html>
