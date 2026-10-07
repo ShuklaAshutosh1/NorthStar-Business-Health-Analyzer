@@ -1,5 +1,9 @@
 # Northstar — AI Business Health Analyser
 
+<p align="center">
+  <img src="assets/banner.svg" alt="Northstar — a clearer view of every business" width="100%">
+</p>
+
 Northstar is a responsive, local-first dashboard for managing client accounts and reviewing their business activity in Indian Rupees (₹). It brings sales, expenses, transactions, cash-flow estimates, and practical growth suggestions into one workspace.
 
 > **Demo and data notice:** Northstar runs entirely in the browser. Client accounts and transactions are saved in that browser’s local storage. The growth coach uses simple rules and saved transaction totals; it does not connect to an AI service. There is no login, shared database, bank connection, or server. Use sample or non-sensitive data only.
