@@ -22,6 +22,19 @@ Northstar is a responsive, local-first dashboard for managing client accounts an
 - Edit the administrator profile and return to the welcome screen with the log out action.
 - Use the interface on desktop and mobile screens.
 
+## Screenshots
+
+These screenshots show Northstar’s welcome page, portfolio, client overview, and growth plan using the fictional Acme Studio demo workspace.
+
+<p align="center">
+  <img src="assets/screenshots/welcome.png" alt="Northstar welcome page" width="49%">
+  <img src="assets/screenshots/portfolio.png" alt="Northstar client portfolio" width="49%">
+</p>
+<p align="center">
+  <img src="assets/screenshots/overview.png" alt="Acme Studio business overview dashboard" width="49%">
+  <img src="assets/screenshots/coach.png" alt="Acme Studio AI growth plan and local coaching assistant" width="49%">
+</p>
+
 ## Dashboards and sections
 
 | Section | What it shows |
@@ -117,6 +130,7 @@ To preview it through GitHub Pages or another static site provider, publish the 
 ├── styles.css   # Responsive layout, components, and visual theme
 ├── app.js       # Dashboards, client workflows, calculations, local storage, CSV, and coach
 ├── favicon.svg  # Northstar browser icon
+├── assets/      # Banner and product screenshots
 └── README.md    # Project guide and data limitations
 ```
 
